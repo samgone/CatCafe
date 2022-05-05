@@ -129,14 +129,95 @@ body {
   border-radius: 10rem;
 }
 
+#booking:hover {
+  background-color: #b96102;
+}
+
 .quote {
   margin: 0;
+  margin-bottom: 15px;
   height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* final section */
+.imgcontainer {
+  display: flex;
+  overflow: clip;
+  align-items: center;
+  justify-content: center;
+}
+
+.catlounging {
+  margin-top: 30px;
+  max-height: 400px;
+  width: vw;
+}
+
+/* Upcoming Events */
+.finalsection h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.eventscards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 2rem;
+}
+
+.card {
+  background: hsla(0, 0%, 100%, 0.8);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.card p {
+  color: rgb(84, 84, 84);
+}
+
+.cardimgcontainer {
+  display: flex;
+  justify-content: center;
+  overflow: clip;
+  width: 100%;
+}
+
+.cardimgcontainer img {
+  height: 300px;
+}
+
+/* footer */
+.footer {
+  background: #909cc2;
+  color: white;
+  height: 250px;
+  margin: 0px;
+}
+
+#info {
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+#goat {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0;
+  background-color: black;
+}
+#goat p {
+  font-size: 10px;
+  padding: 10px;
+  margin: 0;
+  color: white;
 }
 
 @media screen and (max-width: 640px) {
