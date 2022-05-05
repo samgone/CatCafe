@@ -1,0 +1,208 @@
+body {
+  background-color: #fdf8ed;
+  background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+}
+
+/* Navigation Bar */
+.topnav {
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  width: inherit;
+  background: black;
+  color: white;
+  margin: 0px;
+  margin-bottom: 0px !important;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav p {
+  flex: 1 0 0%;
+}
+
+.topnav h1 {
+  margin: 0px;
+  margin-bottom: 0 !important;
+  flex: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.topnav label,
+#checkbox {
+  display: none;
+  background-color: black;
+  font-size: 30px;
+  color: #f6a667;
+  border: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.dropdown {
+  overflow: hidden;
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0 !important;
+  padding: 0 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.dropdown:hover {
+  padding: 30px 5px;
+}
+
+.dropdown a:hover {
+  background-color: #f6a667;
+  color: white;
+}
+
+.logo {
+  height: 75px;
+  padding: 10px;
+}
+
+/* This is for the giant cat picture */
+.header {
+  margin: 0;
+  background-image: url("https://pbs.twimg.com/media/DyfibSbXQAEvXhI?format=jpg&name=4096x4096");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+#socialmedia {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+}
+
+#socialmedia img {
+  padding: 10px;
+}
+
+/* Mid section */
+.midsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+/* button */
+#booking {
+  color: white;
+  background-color: #e97800;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  align-self: center;
+  margin-top: 3rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px;
+  border-radius: 10rem;
+}
+
+.quote {
+  margin: 0;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+    top: 67px;
+    right: 20px;
+    max-height: 0px;
+    margin: 0;
+    padding: 0px;
+    color: #eee;
+    transition: max-height 0.5s ease-out;
+  }
+
+  .dropdown:hover {
+    padding: 0px;
+  }
+
+  .dropdown a {
+    background: hsla(15, 33%, 19%, 1);
+    max-height: 14px;
+  }
+
+  .topnav label {
+    size: 40px;
+    padding: 0px 8px;
+    float: right;
+    display: block;
+    right: 30px;
+  }
+
+  label:hover,
+  input:checked ~ label {
+    background-color: hsl(15, 33%, 19%);
+  }
+
+  #checkbox:checked ~ .dropdown {
+    /* display: block; */
+    max-height: 200px;
+    transition: max-height 0.5s ease-in;
+  }
+
+  .topnav h1 {
+    font-size: 20px;
+  }
+
+  .header {
+    height: 350px;
+  }
+
+  #socialmedia {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+  }
+
+  #socialmedia img {
+    height: 35px;
+    padding: 2px;
+  }
+}
