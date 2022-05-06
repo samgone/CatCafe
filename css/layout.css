@@ -6,11 +6,16 @@ body {
   width: 100%;
 }
 
+h1 {
+  text-align: center;
+}
+
 .topnav {
   position: sticky;
   top: 0;
   font-weight: bold;
   width: inherit;
+  height: 70px;
   background: #050409;
   color: white;
   margin: 0px;
@@ -23,12 +28,23 @@ body {
   z-index: 1;
 }
 
-.topnav a {
+.dropdown a {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.frontpg {
+  color: #eee;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.active {
+  background: #402820;
 }
 
 .topnav p {
@@ -60,12 +76,8 @@ body {
   list-style-type: none;
   margin: 0;
   margin-bottom: 0 !important;
-  padding: 0 5px;
   position: relative;
   z-index: 1;
-}
-
-.dropdown:hover {
   padding: 30px 5px;
 }
 
@@ -75,8 +87,8 @@ body {
 }
 
 .logo {
-  height: 75px;
-  padding: 10px;
+  height: 60px;
+  padding: 5px 10px;
 }
 
 /* footer */
@@ -105,6 +117,7 @@ body {
 
 #info h1 {
   padding-bottom: 10px;
+  text-align: left;
 }
 
 #goat {
@@ -121,7 +134,7 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
   body {
     margin: 0px;
     padding: 0px;
@@ -171,21 +184,6 @@ body {
 
   .topnav h1 {
     font-size: 20px;
-  }
-
-  .header {
-    height: 350px;
-  }
-
-  #socialmedia {
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
-  }
-
-  #socialmedia img {
-    height: 35px;
-    padding: 2px;
   }
 
   .icon img {
