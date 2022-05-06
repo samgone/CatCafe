@@ -83,7 +83,6 @@ body {
 /* This is for the giant cat picture */
 .header {
   margin: 0;
-  background-image: url("https://pbs.twimg.com/media/DyfibSbXQAEvXhI?format=jpg&name=4096x4096");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -94,6 +93,44 @@ body {
   align-items: center;
   position: relative;
   z-index: 0;
+  overflow: hidden;
+}
+
+.carouselContainer {
+  margin: 0px;
+  padding: 25px 0px;
+  height: 400px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pic {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.pic.visible {
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #socialmedia {
@@ -135,7 +172,6 @@ body {
 
 .quote {
   margin: 0;
-  margin-bottom: 15px;
   height: 200px;
   width: 100%;
   display: flex;
@@ -145,23 +181,70 @@ body {
 }
 
 /* final section */
-.imgcontainer {
-  display: flex;
-  overflow: clip;
-  align-items: center;
-  justify-content: center;
+.sliderContainer {
+  margin: 0px;
+  padding: 25px 0px;
+  height: 350px;
+  display: grid;
+  place-items: center;
 }
 
-.catlounging {
-  margin-top: 30px;
-  max-height: 400px;
-  width: vw;
+.slider {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
-/* Upcoming Events */
+.slide {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  font-size: 18px;
+  color: #f6a667;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
+/* upcoming events */
 .finalsection h2 {
   text-align: center;
-  margin-top: 50px;
+  text-decoration: underline;
+  padding: 70px 0 20px 0;
+  margin: 0px;
 }
 
 .eventscards {
@@ -175,6 +258,7 @@ body {
   background: hsla(0, 0%, 100%, 0.8);
   padding: 1rem;
   border-radius: 5px;
+  line-height: 1.5;
 }
 
 .card p {
@@ -202,8 +286,7 @@ body {
 
 #info {
   margin: 0;
-  padding-top: 40px;
-  padding-left: 20px;
+  padding: 40px 20px;
 }
 
 #goat {
