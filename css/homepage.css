@@ -327,6 +327,12 @@ body {
   color: white;
 }
 
+#phone:hover,
+#local:hover,
+#email:hover {
+  color: #f6a667;
+}
+
 @media screen and (max-width: 650px) {
   body {
     margin: 0px;

@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link rel="icon" href="./images/logoicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/745769014b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Beans Café</title>
   </head>
 
@@ -44,11 +48,21 @@
         perfect match. The adoption fee is $135 and includes the following:
       </p>
       <ul class="included">
-        <li>Spay/Neuter before adoption</li>
-        <li>Age-appropriate core vaccinations</li>
-        <li>Microchip with 1 year of registration</li>
-        <li>Collar and temporary carboard carrier for transport</li>
-        <li>Pet Supplies Plus coupon for 100% off your entire purchase</li>
+        <li><i class="fa-solid fa-paw"></i> Spay/Neuter before adoption</li>
+        <li>
+          <i class="fa-solid fa-paw"></i> Age-appropriate core vaccinations
+        </li>
+        <li>
+          <i class="fa-solid fa-paw"></i> Microchip with 1 year of registration
+        </li>
+        <li>
+          <i class="fa-solid fa-paw"></i> Collar and temporary carboard carrier
+          for transport
+        </li>
+        <li>
+          <i class="fa-solid fa-paw"></i> Pet Supplies Plus coupon for 100% off
+          your entire purchase
+        </li>
       </ul>
     </div>
 
@@ -201,12 +215,15 @@
     <div class="footer">
       <div id="info">
         <h1>Bean Café</h1>
-        <p>🤙 (123) 456-7890</p>
-        <p>📌 123 Cats Blvd</p>
-        <p>✉️ justkitten123@gmail.com</p>
+        <p id="phone"><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+        <p id="local"><i class="fa-solid fa-location-dot"></i> 123 Cats Blvd</p>
+        <p id="email">
+          <i class="fa-solid fa-envelope"></i> justkitten123@gmail.com
+        </p>
       </div>
+
       <div class="icon">
-        <img src="./images/logoicon.png" />
+        <img src="./images/Untitled-Artwork.png" />
       </div>
     </div>
 
@@ -222,19 +239,32 @@
         line-height: 1.5;
       }
 
+      ul {
+        list-style: none;
+      }
+
+      li i {
+        color: #402820;
+      }
+
+      li i:hover {
+        color: #f6a667;
+      }
+
       .modal-outer {
-        display: grid;
+        display: flex;
         position: fixed;
         background: hsla(26, 89%, 68%, 0.8);
         height: 100vh;
         width: 100vw;
-        top: 0;
+        top: 0px;
         left: 0;
         justify-content: center;
         align-items: center;
         opacity: 0;
         pointer-events: none;
         transition: all 0.2s ease-in-out;
+        z-index: 2;
       }
 
       .modalImgContainer {
@@ -257,12 +287,14 @@
       }
 
       .modal-inner {
-        max-width: 600px;
+        max-width: 500px;
         min-width: 400px;
         min-height: 200px;
+        max-height: 700px;
         background: white;
         padding: 2rem;
         border-radius: 5px;
+        overflow-y: hidden;
       }
 
       .adoptionscards {
@@ -308,7 +340,13 @@
       }
 
       @media screen and (max-width: 650px) {
+        ul {
+          margin: 0;
+          padding: 10px;
+        }
+
         .modal-inner {
+          margin: 0px 0px;
           min-width: 300px;
           max-height: 500px;
           line-height: 1.2;
