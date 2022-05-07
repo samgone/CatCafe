@@ -287,30 +287,55 @@ body {
 
 /* footer */
 .footer {
-  background: #909cc2;
+  background: #8f9bc1;
   color: white;
   height: 250px;
   margin: 0px;
   position: relative;
   z-index: 0;
-}
-
-.icon img {
-  height: 200px;
-  width: auto;
-  position: absolute;
-  right: 10px;
-  bottom: 30px;
-  transition: all 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #info {
   margin: 0;
-  padding: 30px 30px;
+  padding: 30px;
 }
 
 #info h1 {
   padding-bottom: 10px;
+  text-align: left;
+}
+
+.social_media_info {
+  align-self: center;
+  transition: all;
+}
+
+.social_media_info a {
+  text-decoration: none;
+  letter-spacing: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.fa-instagram:hover {
+  color: #dd2a7b;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
+
+.icon img {
+  padding: 30px;
+  height: 200px;
+  width: auto;
 }
 
 #goat {
@@ -401,7 +426,15 @@ body {
   }
 
   .icon img {
-    height: 100px;
-    width: auto;
+    height: 120px;
+    padding: 10px;
+  }
+
+  .footer {
+    height: 250px;
+  }
+
+  .social_media_info {
+    display: none;
   }
 }
