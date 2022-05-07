@@ -6,10 +6,6 @@ body {
   width: 100%;
 }
 
-h1 {
-  text-align: center;
-}
-
 .topnav {
   position: sticky;
   top: 0;
@@ -43,8 +39,11 @@ h1 {
   text-decoration: none;
 }
 
-.active {
-  background: #402820;
+a.active {
+  text-decoration: underline;
+  text-decoration-style: initial;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #f6a667;
 }
 
 .topnav p {
@@ -89,6 +88,29 @@ h1 {
 .logo {
   height: 60px;
   padding: 5px 10px;
+}
+
+/* midsection */
+.title {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+  width: fit-content;
+  text-decoration: underline;
+  z-index: 0;
+}
+
+.title::before {
+  height: 5px;
+  position: absolute;
+  background: #f6a667;
+  content: "";
+  width: 100%;
+  bottom: 10px;
+  z-index: -1;
+  transition: transform 0.1s ease 0s;
+  transform: skew(-40deg) rotate(-2deg) scaleX(1.05);
 }
 
 /* footer */
