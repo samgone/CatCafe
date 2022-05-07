@@ -107,10 +107,8 @@ a.active {
   background: #f6a667;
   content: "";
   width: 100%;
-  bottom: 10px;
   z-index: -1;
   transition: transform 0.1s ease 0s;
-  transform: skew(-40deg) rotate(-2deg) scaleX(1.05);
 }
 
 /* footer */

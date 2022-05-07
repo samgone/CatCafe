@@ -94,7 +94,6 @@ a.active {
 .title {
   margin: 0 auto;
   padding-top: 20px;
-  text-align: center;
   position: relative;
   width: fit-content;
   text-decoration: underline;
@@ -166,14 +165,14 @@ a.active {
   width: auto;
 }
 
-#goat {
+#catpower {
   display: flex;
   justify-content: center;
   margin: 0px;
   padding: 0;
   background-color: black;
 }
-#goat p {
+#catpower p {
   font-size: 10px;
   padding: 10px;
   margin: 0;

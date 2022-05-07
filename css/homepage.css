@@ -249,11 +249,27 @@ body {
 }
 
 /* upcoming events */
-.finalsection h2 {
+
+.title {
+  margin: 0 auto;
+  padding-top: 20px;
   text-align: center;
+  position: relative;
+  width: fit-content;
   text-decoration: underline;
-  padding: 70px 0 20px 0;
-  margin: 0px;
+  z-index: 0;
+}
+
+.title::before {
+  height: 5px;
+  position: absolute;
+  background: #f6a667;
+  content: "";
+  width: 100%;
+  bottom: 0px;
+  z-index: -1;
+  transition: transform 0.1s ease 0s;
+  transform: skew(-40deg) rotate(-2deg) scaleX(1.05);
 }
 
 .eventscards {
@@ -338,14 +354,14 @@ body {
   width: auto;
 }
 
-#goat {
+#catpower {
   display: flex;
   justify-content: center;
   margin: 0px;
   padding: 0;
   background-color: black;
 }
-#goat p {
+#catpower p {
   font-size: 10px;
   padding: 10px;
   margin: 0;
