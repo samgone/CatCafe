@@ -293,7 +293,7 @@ body {
 .cardimgcontainer {
   display: flex;
   justify-content: center;
-  overflow: clip;
+  overflow: hidden;
   width: 100%;
 }
 
